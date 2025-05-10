@@ -4,7 +4,7 @@ import { getCart } from '@/services/cart-service'
 export const useCartStore = defineStore('cart', () => {
   const count = ref(0)
   async function updateCart() {
-    const { data = [] } = await getCart()
+    const { data = [] } = await getCart(null)
     count.value = data.length
   }
 

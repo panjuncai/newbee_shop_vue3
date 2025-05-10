@@ -25,11 +25,10 @@ router.beforeEach((to, from) => {
 </script>
 
 <template>
-    <RouterView />
+  <RouterView />
 </template>
 
 <style lang="less">
-
 .router-view {
   width: 100%;
   height: auto;
